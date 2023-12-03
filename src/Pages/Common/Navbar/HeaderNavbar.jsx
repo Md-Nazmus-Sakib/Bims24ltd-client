@@ -3,11 +3,11 @@ import React from 'react';
 const HeaderNavbar = () => {
 
     const headerLink = <>
-        <li className='text-md lg:text-[17px] xl:text-xl uppercase bg-yellow-500 rounded-lg my-2 ml-2 lg:rounded-none lg:my-0 lg:ml-0'> <summary > Who We Are</summary></li>
-        <div className="divider divider-horizontal bg-white mx-0 my-0 w-[1px]"></div>
-        <li className='text-md lg:text-[17px] xl:text-xl uppercase'>
+        <li className='text-md lg:text-[15px] xl:text-xl uppercase bg-yellow-500 rounded-lg my-2 ml-2 lg:rounded-none lg:my-0 lg:ml-0'> <summary > Who We Are</summary></li>
+        <div className="divider divider-horizontal bg-white mx-2 my-0 w-[1px]"></div>
+        <li className='text-md lg:text-[15px] xl:text-xl uppercase'>
             <details    >
-                <summary className="bg-yellow-500 rounded-none">What We Do</summary>
+                <summary className="bg-yellow-500 rounded-lg my-2 ml-2 lg:rounded-none lg:my-0 lg:ml-0">What We Do</summary>
                 <ul className="px-0 bg-orange-400">
                     <li className='bg-yellow-500 rounded-lg my-2 ml-2'><a>About Activities</a></li>
                     <li className='bg-yellow-500 rounded-lg my-2 ml-2'><a>Mission</a></li>
@@ -15,10 +15,10 @@ const HeaderNavbar = () => {
                 </ul>
             </details>
         </li>
-        <div className="divider divider-horizontal bg-white mx-0 my-0 w-[1px]"></div>
-        <li className='text-md lg:text-[17px] xl:text-xl uppercase'>
+        <div className="divider divider-horizontal bg-white mx-2 my-0 w-[1px]"></div>
+        <li className='text-md lg:text-[15px] xl:text-xl uppercase'>
             <details    >
-                <summary className="bg-yellow-500 rounded-none">Product</summary>
+                <summary className="bg-yellow-500 rounded-lg my-2 ml-2 lg:rounded-none lg:my-0 lg:ml-0">Product</summary>
                 <ul className="px-0 bg-orange-400">
                     <li className='bg-yellow-500 rounded-lg my-2 ml-2'><a>Display</a></li>
                     <li className='bg-yellow-500 rounded-lg my-2 ml-2'><a>Battery</a></li>
@@ -29,10 +29,10 @@ const HeaderNavbar = () => {
                 </ul>
             </details>
         </li>
-        <div className="divider divider-horizontal bg-white mx-0 my-0 w-[1px]"></div>
-        <li className='text-md lg:text-[17px] xl:text-xl uppercase'>
+        <div className="divider divider-horizontal bg-white mx-2 my-0 w-[1px]"></div>
+        <li className='text-md lg:text-[15px] xl:text-xl uppercase'>
             <details    >
-                <summary className="bg-yellow-500 rounded-none">Publication</summary>
+                <summary className="bg-yellow-500 rounded-lg my-2 ml-2 lg:rounded-none lg:my-0 lg:ml-0">Publication</summary>
                 <ul className="px-0 bg-orange-400">
                     <li className='bg-yellow-500 rounded-lg my-2 ml-2'><a>Different Publication</a></li>
                     <li className='bg-yellow-500 rounded-lg my-2 ml-2'><a>Different Manual</a></li>
@@ -40,10 +40,10 @@ const HeaderNavbar = () => {
                 </ul>
             </details>
         </li>
-        <div className="divider divider-horizontal bg-white mx-0 my-0 w-[1px]"></div>
-        <li className='text-md lg:text-[17px] xl:text-xl uppercase bg-yellow-500 rounded-lg my-2 ml-2 lg:rounded-none lg:my-0 lg:ml-0'> <summary > Mobile Servicing</summary></li>
-        <div className="divider divider-horizontal bg-white mx-0 my-0 w-[1px]"></div>
-        <li className='text-md lg:text-[17px] xl:text-xl uppercase bg-yellow-500 rounded-lg my-2 ml-2 lg:rounded-none lg:my-0 lg:ml-0'> <summary > Air Ticket Booking</summary></li>
+        <div className="divider divider-horizontal bg-white mx-2 my-0 w-[1px]"></div>
+        <li className='text-md lg:text-[15px] xl:text-xl uppercase bg-yellow-500 rounded-lg my-2 ml-2 lg:rounded-none lg:my-0 lg:ml-0'> <summary > Mobile Servicing</summary></li>
+        <div className="divider divider-horizontal bg-white mx-2 my-0 w-[1px]"></div>
+        <li className='text-md lg:text-[15px] xl:text-xl uppercase bg-yellow-500 rounded-lg my-2 ml-2 lg:rounded-none lg:my-0 lg:ml-0'> <summary > Air Ticket Booking</summary></li>
     </>
     return (
         <div className="navbar bg-orange-400 text-white font-bold">
