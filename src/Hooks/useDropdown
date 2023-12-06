@@ -1,0 +1,14 @@
+import { useState, useEffect, useRef } from 'react';
+
+const useDropdown = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const dropdownRef = useRef(null);
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return { isOpen, setIsOpen, toggleDropdown, dropdownRef };
+};
+
+export default useDropdown;

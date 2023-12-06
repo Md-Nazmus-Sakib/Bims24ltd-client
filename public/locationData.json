@@ -1,0 +1,80 @@
+{
+    "divisions": [
+        {
+            "name": "Dhaka",
+            "districts": [
+                {
+                    "name": "Dhaka",
+                    "towns": [
+                        "Uttara",
+                        "Gulshan"
+                    ]
+                },
+                {
+                    "name": "Gazipur",
+                    "towns": [
+                        "Tongi",
+                        "Joydebpur"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Chittagong",
+            "districts": [
+                {
+                    "name": "Chittagong",
+                    "towns": [
+                        "Agrabad",
+                        "Chandgaon"
+                    ]
+                },
+                {
+                    "name": "Cox's Bazar",
+                    "towns": [
+                        "Cox's Bazar Sadar",
+                        "Teknaf"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Rajshahi",
+            "districts": [
+                {
+                    "name": "Rajshahi",
+                    "towns": [
+                        "Rajshahi City",
+                        "Puthia"
+                    ]
+                },
+                {
+                    "name": "Bogra",
+                    "towns": [
+                        "Bogra Sadar",
+                        "Shibganj"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Khulna",
+            "districts": [
+                {
+                    "name": "Khulna",
+                    "towns": [
+                        "Khulna City",
+                        "Jessore"
+                    ]
+                },
+                {
+                    "name": "Satkhira",
+                    "towns": [
+                        "Satkhira Sadar",
+                        "Tala"
+                    ]
+                }
+            ]
+        }
+    ]
+}

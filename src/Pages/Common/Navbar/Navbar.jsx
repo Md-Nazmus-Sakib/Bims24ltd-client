@@ -1,9 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaSearch, FaTwitter, FaYoutube } from "react-icons/fa";
+import { AuthContext } from '../../../AuthProvider/AuthProvider';
 
 
 const Navbar = () => {
+    const { user, loading, createUser, signIn, logOut, setLoading } = useContext(AuthContext);
+    // console.log(user)
+    if (loading) {
+        return <div className='flex justify-center items-center min-h-screen'>
+            <span className="loading loading-bars loading-lg text-error"></span>
+        </div>
+    }
+    const handelLogOut = () => {
+        logOut()
+            .then(() => {
+                console.log('logout')
+                setLoading(false)
+            })
+            .catch(error => console.log(error))
+
+    }
+
     const links = <>
         <li><Link><FaSearch className='w-6 h-6'></FaSearch></Link></li>
         <div className="divider divider-horizontal bg-white my-0 w-[1px]"></div>
@@ -14,14 +32,17 @@ const Navbar = () => {
         <li><Link><FaYoutube className='w-6 h-6'></FaYoutube></Link></li>
         <div className="divider divider-horizontal bg-white my-0 w-[1px]"></div>
         <li><Link className='text-xl'>Contact</Link></li>
-        <li><Link className='text-xl'>Login</Link></li>
+        {
+            user ? <li><Link onClick={handelLogOut} className='text-xl'>Logout</Link></li> :
+                <li><Link to={'/login'} className='text-xl'>Login</Link></li>
+        }
     </>
     return (
 
         <div className="min-h-0 h-[45px] navbar bg-orange-500 text-white font-bold px-4 sm:px-20 my-0 py-0 ">
             <div className="navbar-start my-0">
 
-                <h1 className="text-3xl font-bold bg-orange-400 my-0 px-4 sm:px-12 py-1">BIMS24LTD</h1>
+                <Link to={'/'}><button className="text-3xl font-bold bg-orange-400 my-0 px-4 sm:px-12 py-1">BIMS24LTD</button></Link>
             </div>
 
             <div className='flex justify-end w-full lg:hidden'>

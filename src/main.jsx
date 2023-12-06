@@ -8,9 +8,14 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import { router } from './Router/Router.jsx';
+import AuthProvider from './AuthProvider/AuthProvider.jsx';
+import { Toaster } from 'react-hot-toast';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
+    <Toaster />
   </React.StrictMode>
 )
